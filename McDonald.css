@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Outfit:wght@300;400&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+    url("https://thumbs.dreamstime.com/b/front-mcdonalds-mcdonald-golden-arches-shop-sign-logo-128391053.jpg")
+      no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+  margin: 0;
+  padding: 10px 30px;
+  height: 6vh;
+  font-size: xx-large;
+  color: white;
+  background-color: rgb(114, 0, 85);
+  font-weight: 700;
+}
+span {
+  font-size: 1rem;
+  color: rgb(228, 228, 228);
+}
+.container,.display {
+  width: 90%;
+  margin: 20px auto;
+}
+.ckeck-box {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 10px;
+}
+label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#ckeck-food,.display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+}
+
+.card {
+  border: 2px solid #f3f3f3;
+  background-color: #ffffff;
+  border-radius: 10px;
+  
+}
+.card:hover {
+  background-color: rgb(114, 0, 85);
+  color: white;
+  
+  box-shadow: rgba(255, 255, 255, 0.5)0px 3px 10px;
+}
+#Burgerimg,
+#French-friseimg,
+#Coca-Colaimg,
+#Veg-Pizzaimg,#Coffeeimg,.order{
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  background: no-repeat center center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+  background-size: cover;
+}
+
+.order {
+  outline: 5px solid cyan;
+border-radius: 20px;
+width: 80%;
+margin: auto;
+height: 180px;
+}
+#Burgerimg {
+  background-image: url("https://content.fortune.com/wp-content/uploads/2019/05/mcdonalds_bigvegants.jpg");
+}
+#French-friseimg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPQSe5yh-e17XDa8KTWp0hlyENNaiQEWn4A&usqp=CAU");
+}
+#Coca-Colaimg {
+  background-image: url("https://assets3.thrillist.com/v1/image/2004418/828x610/flatten;crop;webp=auto;jpeg_quality=70");
+}
+#Veg-Pizzaimg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwe7U5YS5dKkr1gEF_txgo2iEupncUBuI4Vw&usqp=CAU");
+}
+#Coffeeimg{
+  background-image: url("https://content.fortune.com/wp-content/uploads/2016/10/94648598.jpg");
+}
+
+#button,#button2 {
+  margin: 20px auto;
+  width: fit-content;
+}
+#btn,#btn2 {
+  padding: 10px 30px;
+  color: white;
+  background-color: rgb(0, 107, 0);
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: ease-in-out 0.3s;
+}
+#button2{
+  display:none;
+}
+#btn:hover, #btn2:hover {
+  background-color: rgb(0, 151, 0);
+}
+.info{
+  color: white;
+  outline: 3px solid rgb(255, 217, 0);
+  border: 2px solid rgb(255, 255, 0);
+  text-align: center;
+  padding: 10px ;
+}
+h1,p{
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1221px) {
+  #ckeck-food,.display {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 970px) {
+  #ckeck-food,.display {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  #ckeck-food,.display {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 380px) {
+  #ckeck-food,.display {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
